@@ -3,6 +3,8 @@
 :imap {<CR> {<CR>}<Esc>O
 
 set tabstop=4
+set number relativenumber
+set showmatch
 
 colors zenburn
 
