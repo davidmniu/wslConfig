@@ -12,7 +12,7 @@ rm zenburn.vim*
 wget https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim
 
 # vimrc, bashrc
-cd /home/david/
+cd ~
 rm .vimrc*
 rm .bashrc*
 wget $myRepo.vimrc
@@ -26,7 +26,7 @@ vim +PluginInstall +qall
 sudo apt install build-essential cmake vim-nox python3-dev -y
 sudo apt install mono-complete golang nodejs default-jdk npm -y
 cd ~/.vim/bundle/YouCompleteMe
-python3 install.py --clangd-completer
+python3 install.py --all
 
 # Set up cpp dev
 cd ~
@@ -35,7 +35,9 @@ wget $myRepo/.ycm_extra_conf.py
 mkdir -p /home/david/templates/
 cd /home/david/templates/
 rm complate.cpp*
+rm compinit.sh*
 wget $myRepo/complate.cpp
+wget $myRepo/compinit.sh
 
 # Script for Windows Terminal
 cd /mnt/c/Users/david/OneDrive/Desktop
